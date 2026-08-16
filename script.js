@@ -139,16 +139,39 @@ ffBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 })();
 
 /* ── CONTACT FORM ────────────────────────────────────────── */
-document.getElementById("contactForm").addEventListener("submit",function(e){
+document.getElementById("contactForm").addEventListener("submit", async function(e){
   e.preventDefault();
-  if(!this.checkValidity()){this.classList.add("was-validated");return;}
-  const btn=this.querySelector("button[type=submit]"), fb=document.getElementById("formFeedback");
-  btn.disabled=true; btn.innerHTML=`<span class="spinner-border spinner-border-sm me-2"></span>Sending…`;
-  setTimeout(()=>{
-    fb.className="mt-3 alert alert-success";
-    fb.textContent="✓ Message sent! I'll get back to you soon.";
-    this.reset(); this.classList.remove("was-validated");
-    btn.disabled=false; btn.innerHTML=`<i class="bi bi-send me-2"></i>Send Message`;
-  },1400);
+  if(!this.checkValidity()){ this.classList.add("was-validated"); return; }
+
+  const form = this;
+  const btn = form.querySelector("button[type=submit]");
+  const fb = document.getElementById("formFeedback");
+
+  btn.disabled = true;
+  btn.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Sending…`;
+
+  try {
+    const response = await fetch("https://formspree.io/f/moeannnq", {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      fb.className = "mt-3 alert alert-success";
+      fb.textContent = "✓ Message sent! I'll get back to you soon.";
+      form.reset();
+      form.classList.remove("was-validated");
+    } else {
+      fb.className = "mt-3 alert alert-danger";
+      fb.textContent = "Something went wrong. Please try again or email me directly.";
+    }
+  } catch (error) {
+    fb.className = "mt-3 alert alert-danger";
+    fb.textContent = "Network error. Please check your connection and try again.";
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = `<i class="bi bi-send me-2"></i>Send Message`;
+  }
 });
 

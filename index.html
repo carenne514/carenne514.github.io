@@ -1,211 +1,399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carenne — Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">    
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
         <a class="navbar-brand" href="#">&lt; carenne &gt;</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
-            aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- HERO -->
-<section id="home" class="bg-dark pb-5 min-vh-100 d-flex align-items-center hero-section">
-    <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
-    <div class="container">
+    <!-- HERO -->
+    <section
+      id="home"
+      class="bg-dark pb-5 min-vh-100 d-flex align-items-center hero-section"
+    >
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+      <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
-                <img src="Assets/Images/tanya-barrow-UthcQwMRgZQ-unsplash.jpg"
-                     class="img-fluid rounded hero-portrait"
-                     alt="Carenne — Developer portrait">
+          <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+            <img
+              src="Assets/Images/tanya-barrow-UthcQwMRgZQ-unsplash.jpg"
+              class="img-fluid rounded hero-portrait"
+              alt="Carenne — Developer portrait"
+            />
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+            <h1 class="display-4 custom-glow fw-bold">Carenne Amador</h1>
+            <p class="lead text-info" id="heroTagline">&nbsp;</p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a href="#about" class="btn btn-outline-warning">About Me</a>
+              <a href="#contact" class="btn btn-outline-info">Hire Me</a>
             </div>
-            <div class="col-lg-7 offset-lg-1">
-                <h1 class="display-4 custom-glow fw-bold">Carenne Amador</h1>
-                <p class="lead text-info" id="heroTagline">&nbsp;</p>
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                    <a href="#about"   class="btn btn-outline-warning">About Me</a>
-                    <a href="#contact" class="btn btn-outline-info">Hire Me</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="py-5">
-    <div class="container">
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+      <div class="container">
         <h5>// ABOUT ME</h5>
         <div class="row justify-content-center">
-            <div class="col-md-10">
-                <p class="about-text">
-                    Dynamic professional with over 10 years of experience in high-pressure healthcare and social
-                    services environments, now specializing in Web Development. Combining a logic-driven clinical
-                    background with developing proficiency in Java, SQL, JavaScript, and modern web frameworks,
-                    I am dedicated to building robust, scalable software solutions that bridge the gap between
-                    user needs and technical execution.
-                </p>
-            </div>
+          <div class="col-md-10">
+            <p class="about-text">
+              Dynamic professional with over 10 years of experience in
+              high-pressure healthcare and social services environments, now
+              specializing in Web Development. Combining a logic-driven clinical
+              background with developing proficiency in Java, SQL, JavaScript,
+              and modern web frameworks, I am dedicated to building robust,
+              scalable software solutions that bridge the gap between user needs
+              and technical execution.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="py-5">
-    <div class="container">
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+      <div class="container">
         <h5>// SKILLS</h5>
         <h2>What I Work With</h2>
-        <div class="row"><div class="col-md-10 offset-md-1">
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2" id="skillsGrid"></div>
-        </div></div>
-    </div>
-</section>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div
+              class="row row-cols-1 row-cols-md-3 g-4 mt-2"
+              id="skillsGrid"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="py-5">
-    <div class="container">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-5">
+      <div class="container">
         <h5>// EXPERIENCE</h5>
         <h2>Work History</h2>
-        <div class="row"><div class="col-md-10 offset-md-1">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
             <div class="accordion mt-4" id="experienceAccordion"></div>
-        </div></div>
-    </div>
-</section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- EDUCATION -->
-<section id="education" class="py-5">
-    <div class="container">
+    <!-- EDUCATION -->
+    <section id="education" class="py-5">
+      <div class="container">
         <h5>// EDUCATION</h5>
         <h2>Foundations &amp; Credentials</h2>
-        <div class="row"><div class="col-md-10 offset-md-1">
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2" id="educationGrid"></div>
-        </div></div>
-    </div>
-</section>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div
+              class="row row-cols-1 row-cols-md-3 g-4 mt-2"
+              id="educationGrid"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-5">
-    <div class="container">
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+      <div class="container">
         <h5>// CONTACT</h5>
         <h2>Let's Build Something Together</h2>
-        <p class="section-subtitle">Have a project in mind? I'd love to hear about it!</p>
-        <div class="row"><div class="col-md-10 offset-md-1">
+        <p class="section-subtitle">
+          Have a project in mind? I'd love to hear about it!
+        </p>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
             <div class="row g-4 mt-2">
-                <div class="col-md-4">
-                    <div class="card my-custom-card h-100 text-center">
-                        <h4 class="text-warning mb-3">Get in Touch</h4>
-                        <p class="mb-2">
-                            <i class="bi bi-geo-alt-fill text-warning me-2"></i>
-                            <span class="text-info">Montréal, Québec<br>(Open to Remote)</span>
-                        </p>
-                        <p class="text-warning mb-3">***</p>
-                        <p class="text-light mb-2">Currently available for:</p>
-                        <ul class="availability-list">
-                            <li><span class="arrow">→</span> Freelance contracts</li>
-                            <li><span class="arrow">→</span> Full-time roles</li>
-                            <li><span class="arrow">→</span> Technical consulting</li>
-                        </ul>
-                    </div>
+              <div class="col-md-4">
+                <div class="card my-custom-card h-100 text-center">
+                  <h4 class="text-warning mb-3">Get in Touch</h4>
+                  <p class="mb-2">
+                    <i class="bi bi-geo-alt-fill text-warning me-2"></i>
+                    <span class="text-info"
+                      >Montréal, Québec<br />(Open to Remote)</span
+                    >
+                  </p>
+                  <p class="text-warning mb-3">***</p>
+                  <p class="text-light mb-2">Currently available for:</p>
+                  <ul class="availability-list">
+                    <li><span class="arrow">→</span> Freelance contracts</li>
+                    <li><span class="arrow">→</span> Full-time roles</li>
+                    <li><span class="arrow">→</span> Technical consulting</li>
+                  </ul>
                 </div>
-                <div class="col-md-8">
-                    <form id="contactForm" novalidate>
-                        <div class="mb-3">
-                            <label for="contactName" class="form-label">Name</label>
-                            <input id="contactName" type="text" class="form-control" placeholder="Your name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contactEmail" class="form-label">Email</label>
-                            <input id="contactEmail" type="email" class="form-control" placeholder="your@email.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contactMessage" class="form-label">Message</label>
-                            <textarea id="contactMessage" class="form-control" rows="5"
-                                placeholder="Tell me about your project…" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-outline-warning">
-                            <i class="bi bi-send me-2"></i>Send Message
-                        </button>
-                        <div id="formFeedback" class="mt-3"></div>
-                    </form>
-                </div>
+              </div>
+              <div class="col-md-8">
+                <form id="contactForm" novalidate>
+                  <div class="mb-3">
+                    <label for="contactName" class="form-label">Name</label>
+                    <input
+                      id="contactName"
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email</label>
+                    <input
+                      id="contactEmail"
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactMessage" class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      id="contactMessage"
+                      name="message"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Tell me about your project…"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-outline-warning">
+                    <i class="bi bi-send me-2"></i>Send Message
+                  </button>
+                  <div id="formFeedback" class="mt-3"></div>
+                </form>
+              </div>
             </div>
-        </div></div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <div class="d-flex justify-content-center gap-3 mb-2">
-            <a href="#" class="text-info fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-info fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-info fs-5" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="text-info fs-5" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
         </div>
-        <p class="text-secondary mb-0 small">&copy; 2026 Carenne Amador. All rights reserved.</p>
-    </div>
-</footer>
+      </div>
+    </section>
 
-<!-- FIREFLY BACK-TO-TOP BUTTON -->
-<button id="fireflyBtn" aria-label="Back to top" title="Scroll to top">
-    <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="d-flex justify-content-center gap-3 mb-2">
+          <a href="#" class="text-info fs-5" aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="#" class="text-info fs-5" aria-label="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="#" class="text-info fs-5" aria-label="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="#" class="text-info fs-5" aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+        <p class="text-secondary mb-0 small">
+          &copy; 2026 Carenne Amador. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- FIREFLY BACK-TO-TOP BUTTON -->
+    <button id="fireflyBtn" aria-label="Back to top" title="Scroll to top">
+      <svg
+        viewBox="0 0 60 60"
+        xmlns="http://www.w3.org/2000/svg"
+        width="60"
+        height="60"
+      >
         <!-- Left wing -->
-        <ellipse class="ff-wing-l" cx="16" cy="20" rx="13" ry="5"
-            fill="rgba(190,230,255,0.55)" stroke="#7aa2f7" stroke-width="1.2"/>
+        <ellipse
+          class="ff-wing-l"
+          cx="16"
+          cy="20"
+          rx="13"
+          ry="5"
+          fill="rgba(190,230,255,0.55)"
+          stroke="#7aa2f7"
+          stroke-width="1.2"
+        />
         <!-- Right wing -->
-        <ellipse class="ff-wing-r" cx="44" cy="20" rx="13" ry="5"
-            fill="rgba(190,230,255,0.55)" stroke="#7aa2f7" stroke-width="1.2"/>
+        <ellipse
+          class="ff-wing-r"
+          cx="44"
+          cy="20"
+          rx="13"
+          ry="5"
+          fill="rgba(190,230,255,0.55)"
+          stroke="#7aa2f7"
+          stroke-width="1.2"
+        />
         <!-- Thorax -->
-        <ellipse cx="30" cy="28" rx="5.5" ry="7" fill="#3a4a5e"/>
+        <ellipse cx="30" cy="28" rx="5.5" ry="7" fill="#3a4a5e" />
         <!-- Head -->
-        <circle cx="30" cy="19" r="5.5" fill="#2d3748"/>
+        <circle cx="30" cy="19" r="5.5" fill="#2d3748" />
         <!-- Eyes -->
-        <circle cx="27.5" cy="18" r="1.4" fill="#c8f064"/>
-        <circle cx="32.5" cy="18" r="1.4" fill="#c8f064"/>
+        <circle cx="27.5" cy="18" r="1.4" fill="#c8f064" />
+        <circle cx="32.5" cy="18" r="1.4" fill="#c8f064" />
         <!-- Antennae -->
-        <line x1="27" y1="14" x2="23" y2="8"  stroke="#3a4a5e" stroke-width="1.3" stroke-linecap="round"/>
-        <line x1="33" y1="14" x2="37" y2="8"  stroke="#3a4a5e" stroke-width="1.3" stroke-linecap="round"/>
-        <circle cx="23" cy="7.5" r="1.8" fill="#c8f064"/>
-        <circle cx="37" cy="7.5" r="1.8" fill="#c8f064"/>
+        <line
+          x1="27"
+          y1="14"
+          x2="23"
+          y2="8"
+          stroke="#3a4a5e"
+          stroke-width="1.3"
+          stroke-linecap="round"
+        />
+        <line
+          x1="33"
+          y1="14"
+          x2="37"
+          y2="8"
+          stroke="#3a4a5e"
+          stroke-width="1.3"
+          stroke-linecap="round"
+        />
+        <circle cx="23" cy="7.5" r="1.8" fill="#c8f064" />
+        <circle cx="37" cy="7.5" r="1.8" fill="#c8f064" />
         <!-- Glowing abdomen -->
-        <ellipse class="ff-glow" cx="30" cy="40" rx="6" ry="9" fill="#c8f064"/>
+        <ellipse class="ff-glow" cx="30" cy="40" rx="6" ry="9" fill="#c8f064" />
         <!-- Abdomen segments -->
-        <line x1="24" y1="37" x2="36" y2="37" stroke="#1a1b2e" stroke-width="1.2" opacity=".45"/>
-        <line x1="24" y1="41" x2="36" y2="41" stroke="#1a1b2e" stroke-width="1.2" opacity=".45"/>
-        <line x1="24" y1="45" x2="36" y2="45" stroke="#1a1b2e" stroke-width="1.2" opacity=".35"/>
+        <line
+          x1="24"
+          y1="37"
+          x2="36"
+          y2="37"
+          stroke="#1a1b2e"
+          stroke-width="1.2"
+          opacity=".45"
+        />
+        <line
+          x1="24"
+          y1="41"
+          x2="36"
+          y2="41"
+          stroke="#1a1b2e"
+          stroke-width="1.2"
+          opacity=".45"
+        />
+        <line
+          x1="24"
+          y1="45"
+          x2="36"
+          y2="45"
+          stroke="#1a1b2e"
+          stroke-width="1.2"
+          opacity=".35"
+        />
         <!-- Legs -->
-        <line x1="25" y1="28" x2="17" y2="31" stroke="#3a4a5e" stroke-width="1.1" stroke-linecap="round"/>
-        <line x1="25" y1="31" x2="16" y2="35" stroke="#3a4a5e" stroke-width="1.1" stroke-linecap="round"/>
-        <line x1="25" y1="34" x2="17" y2="39" stroke="#3a4a5e" stroke-width="1.1" stroke-linecap="round"/>
-        <line x1="35" y1="28" x2="43" y2="31" stroke="#3a4a5e" stroke-width="1.1" stroke-linecap="round"/>
-        <line x1="35" y1="31" x2="44" y2="35" stroke="#3a4a5e" stroke-width="1.1" stroke-linecap="round"/>
-        <line x1="35" y1="34" x2="43" y2="39" stroke="#3a4a5e" stroke-width="1.1" stroke-linecap="round"/>
-    </svg>
-</button>
+        <line
+          x1="25"
+          y1="28"
+          x2="17"
+          y2="31"
+          stroke="#3a4a5e"
+          stroke-width="1.1"
+          stroke-linecap="round"
+        />
+        <line
+          x1="25"
+          y1="31"
+          x2="16"
+          y2="35"
+          stroke="#3a4a5e"
+          stroke-width="1.1"
+          stroke-linecap="round"
+        />
+        <line
+          x1="25"
+          y1="34"
+          x2="17"
+          y2="39"
+          stroke="#3a4a5e"
+          stroke-width="1.1"
+          stroke-linecap="round"
+        />
+        <line
+          x1="35"
+          y1="28"
+          x2="43"
+          y2="31"
+          stroke="#3a4a5e"
+          stroke-width="1.1"
+          stroke-linecap="round"
+        />
+        <line
+          x1="35"
+          y1="31"
+          x2="44"
+          y2="35"
+          stroke="#3a4a5e"
+          stroke-width="1.1"
+          stroke-linecap="round"
+        />
+        <line
+          x1="35"
+          y1="34"
+          x2="43"
+          y2="39"
+          stroke="#3a4a5e"
+          stroke-width="1.1"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
-
